@@ -1,5 +1,6 @@
 FROM node:latest
 WORKDIR /app
+COPY . .
 RUN npm install -g loopback-cli
 RUN npm install -g apiconnect
 RUN npm install -g strongloop
